@@ -7,12 +7,20 @@
 </head>
 <body>
     <script>
-        (function() { 
-            document.write("Hello World")
+        // (function() { 
+        //     var a = 10;
+        //     document.write(a);
+        // })
+
+        // ();
+
+        (function(a,b) { 
+            var a = 10;
+            document.write(a + " " + b);
         })
 
-        ();
-        
+        (10, 20);
+
     </script>
 </body>
 </html>
