@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var samsung = {
+        //     model: 'Galaxy',
+        // };
+        // var lg = {
+        //     model: 'V60',
+        // };
+        // var nokia = {
+        //     model: '3310',
+        // };
+
+        function mobile(model_no) {
+
+            return {
+                model: model_no,
+                price: function () {
+                    return "Price is Rs. 3000";
+                }
+            };
+        }
+
+        var samsung = mobile('galaxy');
+        var nokia = mobile('3310');
+        document.write(samsung.model + " " +
+            samsung.price() + "<br>");
+        document.write(nokia.model + " " + nokia.price());
+
+
+    </script>
+</body>
+
+</html>
