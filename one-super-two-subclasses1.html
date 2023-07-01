@@ -19,8 +19,8 @@
             this.model;
         }
 
-        var Samsung = function(price){
-
+        var Samsung = function(model, price){
+            Mobile.call(this, model)
             this.price = price;
         }
 
@@ -28,8 +28,9 @@
         Samsung.prototype = Object.create(Mobile.prototype);
         Samsung.prototype.constructor = Samsung;
 
-        var galaxy = new Samsung(3000);
-        console.log(galaxy.getModel);
+        var galaxy = new Samsung("galaxy", 3000);
+        console.log(galaxy.getModel());
+        console.log(galaxy.model);
 
 
     </script>
