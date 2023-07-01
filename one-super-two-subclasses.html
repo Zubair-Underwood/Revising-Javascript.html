@@ -15,10 +15,7 @@
             child.prototype = Object.create(parent.prototype);
             child.prototype.constructor = child;
         }
-        // Inheritance
-        extend(Samsung, Mobile);
-        extend(Lenovo, Mobile);
-        extend(Lg, Human);
+
 
         // Super Class
         var Mobile = function () {
@@ -41,6 +38,11 @@
         var lenovo = function (model) {
             this.model = model;
         }
+
+        // Inheritance
+        extend(Samsung, Mobile);
+        extend(Lenovo, Mobile);
+        extend(Lg, Human);
 
         var galaxy = new Samsung("Galaxy", 3000);
         var phab2 = new Lenovo("Phab 2");
