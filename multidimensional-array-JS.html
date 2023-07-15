@@ -10,9 +10,22 @@
 <body>
     <script>
 
-        var geek = [["Rahul", "Dell", 10],
-        ["Jeff", "HP", 20],
-        ["Matt", "Lenovo", 30]];
+        var geek = [
+            ["Rahul", "Dell", 10],
+            ["Jeff", "HP", 20],
+            ["Matt", "Lenovo", 30]
+        ];
+
+
+        for(let i = 0; i < 3; i++){
+
+            for(let j = 0; j < 3; j++){
+
+                document.write(geek[i][j] + " ");
+            }
+
+            document.write("<br>");
+        }
 
     </script>
 </body>
